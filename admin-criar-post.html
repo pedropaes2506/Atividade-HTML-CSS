@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Criar Post - Admin</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">HABIT</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Páginas</a></li>
+          <li><a href="destaques.html">Destaques</a></li>
+          <li><a href="newsletter.html">Assinar</a></li>
+          <li><a href="admin-categorias.html">Admin</a></li>
+        </ul>
+      </nav>
+      <form class="search-box" role="search">
+        <label for="q" class="sr-only">Buscar</label>
+        <input type="search" id="q" name="q" placeholder="Buscar..." />
+        <button type="submit" class="btn">Buscar</button>
+      </form>
+      <a href="#" class="btn btn-outline">Entrar</a>
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main id="main" class="container admin-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="admin-categorias.html">Categorias</a></li>
+        <li><a href="admin-criar-post.html">Criar Post</a></li>
+        <li><a href="#">Escolhas do Editor</a></li>
+        <li><a href="#">Usuários</a></li>
+        <li><a href="#">Fila de revisão</a></li>
+        <li><a href="#">Fila de comentários</a></li>
+      </ul>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <section class="admin-content">
+      <!-- Cards de métricas -->
+      <div class="metrics">
+        <div class="metric-card">
+          <h3>Posts</h3>
+          <p>128</p>
+        </div>
+        <div class="metric-card">
+          <h3>Visualizações</h3>
+          <p>54k</p>
+        </div>
+        <div class="metric-card">
+          <h3>Inscritos</h3>
+          <p>12k</p>
+        </div>
+        <div class="metric-card">
+          <h3>Pendências</h3>
+          <p>7</p>
+        </div>
+      </div>
+
+      <!-- Formulário Criar Post -->
+      <div class="create-post-card">
+        <h2>Criar Post</h2>
+        <form>
+          <input type="text" placeholder="Título" required />
+
+          <textarea rows="8" placeholder="Escreva aqui... (Editor simulador)"></textarea>
+
+          <div class="form-row">
+            <input type="text" placeholder="Categorias e tags" />
+            <input type="file" />
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-outline">Salvar rascunho</button>
+            <button type="button" class="btn btn-outline">Enviar para revisão</button>
+            <button type="submit" class="btn">Publicar (admin)</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="tags footer-tags">
+        <span class="tag">Instagram</span>
+        <span class="tag">Work</span>
+        <span class="tag">Bags</span>
+        <span class="tag">Lamp</span>
+        <span class="tag">Books</span>
+      </div>
+      <p>© 2025 Meu Site · Meu site</p>
+    </div>
+  </footer>
+</body>
+</html>
